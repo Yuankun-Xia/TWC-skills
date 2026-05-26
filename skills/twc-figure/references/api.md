@@ -37,72 +37,38 @@ DEFAULT_COLORS = [
     PALETTE["neutral_light"],
 ]
 
-PALETTE_NMI_PASTEL = {
-    "baseline_dark": "#484878",
-    "baseline_mid":  "#7884B4",
-    "baseline_soft": "#B4C0E4",
-    "ours_tiny":  "#E4E4F0",
-    "ours_base":  "#E4CCD8",
-    "ours_large": "#F0C0CC",
-    "bg_lilac": "#E0E0F0",
-    "bg_aqua":  "#E0F0F0",
-    "bg_peach": "#F0E0D0",
-    "neutral_light": "#D8D8D8",
-    "neutral_mid":   "#A8A8A8",
-    "neutral_dark":  "#606060",
-    "delta_up":   "#2E9E44",
-    "delta_down": "#E53935",
+IEEE_QUANT_PALETTE = {
+    "proposed":    "#0F4D92",  # deep blue — hero method (always blue in IEEE)
+    "baseline_1":  "#D9544D",  # muted red
+    "baseline_2":  "#4DAF4A",  # muted green
+    "baseline_3":  "#E78A2E",  # muted orange
+    "baseline_4":  "#984EA3",  # muted purple
+    "baseline_5":  "#A6CEE3",  # light blue
+    "neutral":     "#999999",  # grey
+    "grid":        "#B0B0B0",  # grid lines — light gray per IEEE convention
 }
 
-DEFAULT_COLORS_NMI_PASTEL = [
-    PALETTE_NMI_PASTEL["baseline_dark"],
-    PALETTE_NMI_PASTEL["baseline_mid"],
-    PALETTE_NMI_PASTEL["baseline_soft"],
-    PALETTE_NMI_PASTEL["ours_tiny"],
-    PALETTE_NMI_PASTEL["ours_base"],
-    PALETTE_NMI_PASTEL["ours_large"],
+IEEE_DIAGRAM_FILLS = {
+    "server_cloud":  "#C4D7E0",  # light blue
+    "client_local":  "#B6DAA0",  # light green
+    "trainable":     "#FFCA8B",  # light peach/orange
+    "communication": "#FFF2CB",  # light yellow
+    "emphasis":      "#FF0000",  # red — sparse, for callouts only
+    "group_bg":      "#F2F2F2",  # light grey — container backgrounds
+}
+
+DEFAULT_COLORS_IEEE = [
+    IEEE_QUANT_PALETTE["proposed"],
+    IEEE_QUANT_PALETTE["baseline_1"],
+    IEEE_QUANT_PALETTE["baseline_2"],
+    IEEE_QUANT_PALETTE["baseline_3"],
+    IEEE_QUANT_PALETTE["baseline_4"],
+    IEEE_QUANT_PALETTE["baseline_5"],
 ]
-
-PALETTE_NATURE_IMAGING = {
-    "bg": "#000000",
-    "context": "#B8B8B8",
-    "cyan": "#22D7E6",
-    "magenta": "#FF2AD4",
-    "white": "#FFFFFF",
-}
-
-PALETTE_NATURE_MATERIAL = {
-    "aqua": "#77D7D1",
-    "teal": "#33B5A5",
-    "lilac": "#B9A7E8",
-    "violet": "#7C6CCF",
-    "callout_red": "#E53935",
-    "neutral": "#D9D9D9",
-}
-
-PALETTE_NATURE_CLINICAL = {
-    "baseline": "#272727",
-    "week6": "#E28E2C",
-    "week13": "#D24B40",
-    "week26": "#5B8FD6",
-    "year1": "#7BAA5B",
-    "year2": "#C45AD6",
-    "group_band": "#F2E6D9",
-}
-
-PALETTE_NATURE_GENOMICS = {
-    "neutral_light": "#D8D8D8",
-    "neutral_mid": "#8F8F8F",
-    "wave1": "#D9544D",
-    "wave2": "#5B7FCA",
-    "wave3": "#B89BD9",
-    "outline": "#4D4D4D",
-}
 ```
 
-Use `DEFAULT_COLORS` when color itself carries explicit semantic meaning (`hero`, `baseline`, `positive variant`).
-Use `DEFAULT_COLORS_NMI_PASTEL` when several compared methods belong to one or two related families and the page
-should feel visually unified.
+Use `DEFAULT_COLORS_IEEE` for all method comparisons. Use `IEEE_DIAGRAM_FILLS` for
+architecture diagrams and flowcharts.
 
 ---
 
@@ -112,8 +78,8 @@ These three lines are **non-negotiable** and must appear at the top of every scr
 before any figure is created. They guarantee editable text in SVG output:
 
 ```python
-plt.rcParams['font.family'] = 'sans-serif'
-plt.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Liberation Sans']
+plt.rcParams['font.family'] = 'serif'
+plt.rcParams['font.serif'] = ['Times New Roman', 'Times', 'Nimbus Roman', 'STIXGeneral', 'DejaVu Serif']
 plt.rcParams['svg.fonttype'] = 'none'   # keeps text as <text> nodes, not paths
 ```
 
@@ -133,15 +99,17 @@ exports. Never use `.png` alone when the figure contains text that may need adju
 def apply_publication_style(font_size=16, axes_linewidth=2.5, use_tex=False):
     """Apply IEEE-style rcParams. Call once before creating any figures."""
     # ── MANDATORY: editable SVG text ──────────────────────────────────────────
-    plt.rcParams['font.family'] = 'sans-serif'
-    plt.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Liberation Sans']
+    plt.rcParams['font.family'] = 'serif'
+    plt.rcParams['font.serif'] = ['Times New Roman', 'Times', 'Nimbus Roman', 'STIXGeneral', 'DejaVu Serif']
     plt.rcParams['svg.fonttype'] = 'none'
     # ── Layout & style ────────────────────────────────────────────────────────
     plt.rcParams['font.size'] = font_size
-    plt.rcParams['axes.spines.right'] = False
-    plt.rcParams['axes.spines.top'] = False
+    plt.rcParams['axes.spines.right'] = True    # IEEE: full boxed frame
+    plt.rcParams['axes.spines.top'] = True
     plt.rcParams['axes.linewidth'] = axes_linewidth
-    plt.rcParams['legend.frameon'] = False
+    plt.rcParams['legend.frameon'] = True
+    plt.rcParams['legend.edgecolor'] = '#cccccc'
+    plt.rcParams['legend.framealpha'] = 0.9
     if use_tex:
         plt.rcParams['text.usetex'] = True
 ```
@@ -221,7 +189,7 @@ def make_grouped_bar(ax, categories, series, labels,
     labels     : list[str]  — legend label per group
     ylabel     : str
     colors     : list[str] | None  — defaults to DEFAULT_COLORS; override with
-                                     DEFAULT_COLORS_NMI_PASTEL for unified-family figures
+                                     DEFAULT_COLORS_IEEE for method comparison figures
     annotate   : bool  — print value above each bar
     bar_width  : float — total width for all bars in one category
     error_kw   : dict  — passed to ax.bar as error_kw
@@ -328,7 +296,7 @@ def make_forest_plot(ax, labels, estimates, ci_low, ci_high,
 ```
 
 Use pale `ax.axhspan(...)` bands behind contiguous label groups when you need the
-clinical-triptych look from `Nature`.
+grouped-category look common in IEEE bar charts.
 
 ---
 

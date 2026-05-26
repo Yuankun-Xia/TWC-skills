@@ -87,15 +87,18 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 mpl.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans", "sans-serif"],
+    "font.family": "serif",
+    "font.serif": ["Times New Roman", "Times", "Nimbus Roman", "STIXGeneral", "DejaVu Serif"],
     "svg.fonttype": "none",     # editable text in SVG
     "pdf.fonttype": 42,         # editable TrueType text in PDF
     "font.size": 7,             # use 15-24 only for large slide-sized panels
-    "axes.spines.right": False,
-    "axes.spines.top": False,
+    "axes.spines.right": True,  # IEEE: full boxed frame
+    "axes.spines.top": True,
     "axes.linewidth": 0.8,
-    "legend.frameon": False,
+    "axes.edgecolor": "#262626",
+    "legend.frameon": True,
+    "legend.edgecolor": "#cccccc",
+    "legend.framealpha": 0.9,
 })
 
 def save_pub_py(fig, filename, dpi=600):

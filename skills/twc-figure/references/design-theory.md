@@ -8,9 +8,8 @@ Derived from scripts in the [figures4papers](https://github.com/ChenLiu-1996/fig
 ## 1) Typography
 
 ### Font stack (priority order)
-- **IEEE standard**: `font.family = 'sans-serif'`, `font.sans-serif = ['Arial']`
-- **Fallback stack**: `['Arial', 'Helvetica', 'DejaVu Sans', 'sans-serif']`
-- **Helvetica** (equivalent) also appears in many scripts as `font.family = 'helvetica'`
+- **IEEE standard**: `font.family = 'serif'`, `font.serif = ['Times New Roman', 'Times', 'Nimbus Roman']`
+- **Fallback stack**: `['Times New Roman', 'Times', 'Nimbus Roman', 'STIXGeneral', 'DejaVu Serif']`
 - SVG/PDF editable text: always set `svg.fonttype = 'none'`
 - LaTeX math labels: `text.usetex = True` only when LaTeX is installed
 
@@ -25,22 +24,26 @@ Derived from scripts in the [figures4papers](https://github.com/ChenLiu-1996/fig
 | Legend text on large panels | 28–38 | — |
 | Tick labels | 20–36 | — |
 
-When targeting the final dimensions of a two-column `Nature` figure page, start smaller than
-slide-sized preview figures. The sampled 2026 papers routinely landed in the `7–9 pt` final-text
-regime for dense composites.
+IEEE two-column papers (TWC, Trans. Communications, Trans. Computers, TNNLS) use
+**Times-Roman** at 7–9pt for all figure text. Figure captions are 8pt. Body text is 10pt.
 
 ---
 
-## 2) Axes & Spines
+## 2) Axes, Spines & Grid
 
 ```python
-plt.rcParams['axes.spines.right'] = False   # always off
-plt.rcParams['axes.spines.top'] = False     # always off
-plt.rcParams['legend.frameon'] = False      # frameless legends everywhere
+plt.rcParams['axes.spines.right'] = True    # IEEE: full boxed frame
+plt.rcParams['axes.spines.top'] = True      # all four spines visible
+plt.rcParams['legend.frameon'] = True       # thin-bordered legends
+plt.rcParams['legend.edgecolor'] = '#cccccc'
 ```
 
-- Keep only left + bottom spines — minimalist, Nature-approved.
-- No grid lines by default; use sparse y-ticks to guide the eye.
+- IEEE engineering papers use a full boxed frame — all four spines visible.
+- **Grid lines: ON** — light gray (`#b0b0b0`), thin (0.35–0.5pt), both horizontal
+  and vertical. Grid is present in 100% of sampled IEEE papers but always subordinate
+  to data. Use `ax.grid(True, color='#b0b0b0', linewidth=0.35, alpha=0.5)`.
+- Frame edge: dark gray (`#262626`), not pure black — matches IEEE printed page
+  convention.
 
 ---
 
@@ -50,68 +53,51 @@ Semantic: blue = proposed method, green = positive variants, red/pink = baseline
 For dense multi-panel figures, however, **family consistency beats maximal hue separation**.
 
 ```python
-PALETTE = {
-    # Proposed / key method
-    "blue_main":      "#0F4D92",   # deep blue — hero method
-    "blue_secondary": "#3775BA",   # medium blue — second author method
-
-    # Positive / improvement shades (light → dark)
-    "green_1": "#DDF3DE",
-    "green_2": "#AADCA9",
-    "green_3": "#8BCF8B",
-
-    # Baseline / contrast shades (light → dark)
-    "red_1":      "#F6CFCB",
-    "red_2":      "#E9A6A1",
-    "red_strong": "#B64342",
-
-    # Neutral support
-    "neutral_light": "#CFCECE",
-    "neutral_mid":   "#767676",
-    "neutral_dark":  "#4D4D4D",
-    "neutral_black": "#272727",
-
-    # Accent / callout (use sparingly)
-    "gold":   "#FFD700",
-    "teal":   "#42949E",
-    "violet": "#9A4D8E",
-    "magenta":"#EA84DD",
+IEEE_QUANT_PALETTE = {
+    "proposed":    "#0F4D92",  # deep blue — hero method (always blue in IEEE)
+    "baseline_1":  "#D9544D",  # muted red
+    "baseline_2":  "#4DAF4A",  # muted green
+    "baseline_3":  "#E78A2E",  # muted orange
+    "baseline_4":  "#984EA3",  # muted purple
+    "baseline_5":  "#A6CEE3",  # light blue
+    "neutral":     "#999999",  # grey
+    "grid":        "#B0B0B0",  # grid lines — light gray per IEEE convention
 }
 
 DEFAULT_COLOR_ORDER = [
-    "#0F4D92",   # blue_main
-    "#8BCF8B",   # green_3
-    "#B64342",   # red_strong
-    "#42949E",   # teal
-    "#9A4D8E",   # violet
-    "#CFCECE",   # neutral_light
+    "#0F4D92",   # blue: proposed
+    "#D9544D",   # red: baseline
+    "#4DAF4A",   # green: baseline
+    "#E78A2E",   # orange: baseline
+    "#984EA3",   # purple: baseline
+    "#A6CEE3",   # light blue: variant
 ]
 ```
 
-### Unified-family rule (recommended for NMI-style pages)
+### Unified-family rule (observed in IEEE papers)
 
-Publication figures should read like **one figure**, not six unrelated plots. Prefer one cool family for
-baselines and one lilac/rose family for the proposed method line.
+Publication figures should read like **one figure**, not six unrelated plots. All 4 sampled
+IEEE papers maintain a rigorous one-method-one-color rule across all figures.
 
 ```python
-PALETTE_NMI_PASTEL = {
-    "baseline_dark": "#484878",
-    "baseline_mid":  "#7884B4",
-    "baseline_soft": "#B4C0E4",
-    "ours_tiny":  "#E4E4F0",
-    "ours_base":  "#E4CCD8",
-    "ours_large": "#F0C0CC",
-    "delta_up":   "#2E9E44",
-    "delta_down": "#E53935",
+IEEE_QUANT_PALETTE = {
+    "proposed":    "#0F4D92",  # deep blue — hero method (always blue in IEEE)
+    "baseline_1":  "#D9544D",  # muted red
+    "baseline_2":  "#4DAF4A",  # muted green
+    "baseline_3":  "#E78A2E",  # muted orange
+    "baseline_4":  "#984EA3",  # muted purple
+    "baseline_5":  "#A6CEE3",  # light blue
+    "neutral":     "#999999",  # grey
+    "grid":        "#B0B0B0",  # grid lines
 }
 
-DEFAULT_COLOR_ORDER_NMI_PASTEL = [
-    "#484878",   # baseline_dark
-    "#7884B4",   # baseline_mid
-    "#B4C0E4",   # baseline_soft
-    "#E4E4F0",   # ours_tiny
-    "#E4CCD8",   # ours_base
-    "#F0C0CC",   # ours_large
+DEFAULT_COLOR_ORDER_IEEE = [
+    "#0F4D92",   # blue: proposed
+    "#D9544D",   # red: baseline
+    "#4DAF4A",   # green: baseline
+    "#E78A2E",   # orange: baseline
+    "#984EA3",   # purple: baseline
+    "#A6CEE3",   # light blue: variant
 ]
 ```
 
@@ -162,7 +148,7 @@ colors = [(color[0], color[1], color[2], a) for a in alphas]
 For multi-axis figures, the **last subplot is legend-only**:
 ```python
 ax_legend = fig.add_subplot(1, n+1, n+1)
-ax_legend.legend(handles, labels, fontsize=..., loc='center', frameon=False)
+ax_legend.legend(handles, labels, fontsize=..., loc='center', frameon=True, edgecolor='#cccccc')
 ax_legend.set_axis_off()
 ```
 
@@ -172,7 +158,7 @@ Tighten limits to data range: e.g., `ax.set_ylim([data.min() - margin, data.max(
 
 ### IEEE page archetypes from sampled 2026 papers
 
-`Nature` figures were not uniformly dashboard-like. They repeatedly used a few strong page
+IEEE figures were not uniformly dashboard-like. They repeatedly used a few strong page
 archetypes:
 
 | Archetype | Layout signal | Practical rule |
@@ -421,7 +407,7 @@ Label quadrants ("Immune-hot / low tumor", "Immune-desert / high tumor", …) wi
 
 To match IEEE publication standards:
 
-- [ ] **MANDATORY first lines**: `font.family='sans-serif'`, `font.sans-serif=['Arial','DejaVu Sans','Liberation Sans']`, `svg.fonttype='none'`
+- [ ] **MANDATORY first lines**: `font.family='serif'`, `font.serif=['Times New Roman', 'Times', 'Nimbus Roman', 'STIXGeneral', 'DejaVu Serif']`, `svg.fonttype='none'`
 - [ ] **Save as SVG** (primary). PNG dpi=300 as optional raster preview.
 - [ ] Top and right spines off; frameless legend
 - [ ] Figure architecture chosen intentionally: grid, schematic-led composite, image plate, or asymmetric hero layout
@@ -431,6 +417,6 @@ To match IEEE publication standards:
 - [ ] Legends omitted or shared when direct labels or one legend strip read better
 - [ ] Y-limits tightened to data range (not 0–100 when values are 80–95)
 - [ ] X-ticks hidden when methods are named in legend
-- [ ] Legend in dedicated panel or `frameon=False`
+- [ ] Legend: inside plot or dedicated panel, thin-bordered (`frameon=True`, edgecolor='#cccccc')
 - [ ] `tight_layout(pad=2)` before save
 - [ ] `plt.close(fig)` after save
