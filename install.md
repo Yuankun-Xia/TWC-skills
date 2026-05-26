@@ -1,11 +1,11 @@
-# nature-skills Installation Guide
+# twc-skills Installation Guide
 
 This file explains how to install the skills in this repository so they are actually usable in coding agents such as Codex and Claude Code.
 
 The most important point is simple:
 
-- `nature-skills` is **not** a Python package or npm package
-- each `skills/nature-*` folder is one reusable skill unit
+- `twc-skills` is **not** a Python package or npm package
+- each `skills/twc-*` folder is one reusable skill unit
 - in most cases, you should copy or reference the **entire folder**, not only `SKILL.md`
 
 Why that matters:
@@ -24,7 +24,7 @@ Some also include `README.md`, `references/`, assets, scripts, or eval files.
 Typical examples:
 
 ```text
-skills/nature-<topic>/
+skills/twc-<topic>/
 ├── SKILL.md
 ├── README.md              # common, but not guaranteed
 ├── references/            # present for some skills
@@ -33,17 +33,17 @@ skills/nature-<topic>/
 
 Examples in this repository:
 
-- `nature-polishing`
-- `nature-writing`
-- `nature-figure`
-- `nature-citation`
-- `nature-data`
-- `nature-reader`
-- `nature-paper2ppt`
-- `nature-response`
+- `twc-polishing`
+- `twc-writing`
+- `twc-figure`
+- `twc-citation`
+- `twc-data`
+- `twc-reader`
+- `twc-paper2ppt`
+- `twc-response`
 
 If you want one skill, install one folder.
-If you want the full collection, install all `skills/nature-*` folders.
+If you want the full collection, install all `skills/twc-*` folders.
 
 ---
 
@@ -64,24 +64,24 @@ Codex is the cleanest target for this repository because it can use local skill 
 ### 3.1 Clone the repository
 
 ```bash
-git clone https://github.com/Yuan1z0825/nature-skills.git
-cd nature-skills
+git clone https://github.com/Yuan1z0825/twc-skills.git
+cd twc-skills
 ```
 
 ### 3.2 Install one skill
 
-Example: install `nature-polishing`
+Example: install `twc-polishing`
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R skills/nature-polishing ~/.codex/skills/
+cp -R skills/twc-polishing ~/.codex/skills/
 ```
 
 ### 3.3 Install all current skills
 
 ```bash
 mkdir -p ~/.codex/skills
-for d in skills/nature-*; do
+for d in skills/twc-*; do
   cp -R "$d" ~/.codex/skills/
 done
 ```
@@ -91,7 +91,7 @@ done
 Start a fresh Codex session and ask for a task that clearly matches the skill, for example:
 
 ```text
-Polish this abstract in Nature style.
+Polish this abstract in IEEE style.
 ```
 
 or
@@ -107,19 +107,19 @@ If the installed skill is discovered correctly, Codex should use the skill-speci
 When this repository changes:
 
 ```bash
-cd /path/to/nature-skills
+cd /path/to/twc-skills
 git pull
-cp -R skills/nature-polishing ~/.codex/skills/
+cp -R skills/twc-polishing ~/.codex/skills/
 ```
 
-If you installed all skills, re-copy all `skills/nature-*` folders after pulling.
+If you installed all skills, re-copy all `skills/twc-*` folders after pulling.
 
 ### 3.6 Common Codex mistake
 
 Do **not** do this:
 
 ```bash
-cp skills/nature-polishing/SKILL.md ~/.codex/skills/
+cp skills/twc-polishing/SKILL.md ~/.codex/skills/
 ```
 
 That copies only one file and drops the rest of the skill bundle.
@@ -127,14 +127,14 @@ That copies only one file and drops the rest of the skill bundle.
 Use this instead:
 
 ```bash
-cp -R skills/nature-polishing ~/.codex/skills/
+cp -R skills/twc-polishing ~/.codex/skills/
 ```
 
 ---
 
 ## 4. Install for Claude Code
 
-Claude Code does **not** currently load a `nature-*` folder as a native skill in the same way Codex does.
+Claude Code does **not** currently load a `twc-*` folder as a native skill in the same way Codex does.
 
 The practical solution is:
 
@@ -166,13 +166,13 @@ Example:
 ```bash
 mkdir -p ~/ai-skills
 cd ~/ai-skills
-git clone https://github.com/Yuan1z0825/nature-skills.git
+git clone https://github.com/Yuan1z0825/twc-skills.git
 ```
 
 In the examples below, the repository path is:
 
 ```text
-~/ai-skills/nature-skills
+~/ai-skills/twc-skills
 ```
 
 If you use a different path, replace it consistently.
@@ -183,16 +183,16 @@ Create a user-level subagent:
 
 ```bash
 mkdir -p ~/.claude/agents
-cat > ~/.claude/agents/nature-polishing.md <<'EOF'
+cat > ~/.claude/agents/twc-polishing.md <<'EOF'
 ---
-name: nature-polishing
-description: Use proactively for Nature-style academic polishing, restructuring, or Chinese-to-English manuscript refinement.
+name: twc-polishing
+description: Use proactively for IEEE-style academic polishing, restructuring, or Chinese-to-English manuscript refinement.
 ---
 
-When invoked, first read `~/ai-skills/nature-skills/skills/nature-polishing/SKILL.md`.
+When invoked, first read `~/ai-skills/twc-skills/skills/twc-polishing/SKILL.md`.
 Treat that file as the governing workflow.
 If the skill references supporting files, read only the specific files you need from
-`~/ai-skills/nature-skills/skills/nature-polishing/`.
+`~/ai-skills/twc-skills/skills/twc-polishing/`.
 Do not replace the skill with a generic polishing response.
 EOF
 ```
@@ -200,7 +200,7 @@ EOF
 Then start a new Claude Code session and ask:
 
 ```text
-Use the nature-polishing subagent to revise this abstract.
+Use the twc-polishing subagent to revise this abstract.
 ```
 
 ### 4.4 Alternative method: create a slash command wrapper
@@ -209,9 +209,9 @@ If you prefer a command instead of a subagent:
 
 ```bash
 mkdir -p ~/.claude/commands
-cat > ~/.claude/commands/nature-polishing.md <<'EOF'
-Read `~/ai-skills/nature-skills/skills/nature-polishing/SKILL.md` first and follow it strictly.
-Read any directly needed supporting files from `~/ai-skills/nature-skills/skills/nature-polishing/`.
+cat > ~/.claude/commands/twc-polishing.md <<'EOF'
+Read `~/ai-skills/twc-skills/skills/twc-polishing/SKILL.md` first and follow it strictly.
+Read any directly needed supporting files from `~/ai-skills/twc-skills/skills/twc-polishing/`.
 
 $ARGUMENTS
 EOF
@@ -220,7 +220,7 @@ EOF
 Then inside Claude Code:
 
 ```text
-/nature-polishing Rewrite this abstract for Nature.
+/twc-polishing Rewrite this abstract for Nature.
 ```
 
 ### 4.5 Why this wrapper approach is better than copying only `SKILL.md`
@@ -239,28 +239,28 @@ Keeping the repo cloned and pointing Claude Code at the real folder is more robu
 
 Repeat the same pattern for other folders:
 
-- `nature-figure`
-- `nature-citation`
-- `nature-data`
-- `nature-reader`
-- `nature-paper2ppt`
+- `twc-figure`
+- `twc-citation`
+- `twc-data`
+- `twc-reader`
+- `twc-paper2ppt`
 
-For example, a `nature-paper2ppt` wrapper should point to:
+For example, a `twc-paper2ppt` wrapper should point to:
 
 ```text
-~/ai-skills/nature-skills/skills/nature-paper2ppt/SKILL.md
+~/ai-skills/twc-skills/skills/twc-paper2ppt/SKILL.md
 ```
 
-The same pattern works for `nature-reader`:
+The same pattern works for `twc-reader`:
 
 ```text
-~/ai-skills/nature-skills/skills/nature-reader/SKILL.md
+~/ai-skills/twc-skills/skills/twc-reader/SKILL.md
 ```
 
 ### 4.7 Update later
 
 ```bash
-cd ~/ai-skills/nature-skills
+cd ~/ai-skills/twc-skills
 git pull
 ```
 
@@ -273,7 +273,7 @@ If your wrapper points to this stable clone path, no further reinstall step is n
 If your agent supports reusable prompt folders, profile files, or custom system prompts, use the real skill directory under `skills/` as the portable unit:
 
 ```text
-skills/nature-<topic>/
+skills/twc-<topic>/
 ├── SKILL.md
 ├── README.md              # common, but not guaranteed
 ├── references/            # present for some skills
@@ -313,7 +313,7 @@ Recommended rule:
 
 Check:
 
-- did you install the full `skills/nature-*` folder rather than only `SKILL.md`?
+- did you install the full `skills/twc-*` folder rather than only `SKILL.md`?
 - did you start a fresh session after installation?
 - are you asking for a task that clearly matches the skill?
 
@@ -345,19 +345,19 @@ Then:
 ### Codex: one-skill install
 
 ```bash
-git clone https://github.com/Yuan1z0825/nature-skills.git
-cd nature-skills
+git clone https://github.com/Yuan1z0825/twc-skills.git
+cd twc-skills
 mkdir -p ~/.codex/skills
-cp -R skills/nature-polishing ~/.codex/skills/
+cp -R skills/twc-polishing ~/.codex/skills/
 ```
 
 ### Codex: full install
 
 ```bash
-git clone https://github.com/Yuan1z0825/nature-skills.git
-cd nature-skills
+git clone https://github.com/Yuan1z0825/twc-skills.git
+cd twc-skills
 mkdir -p ~/.codex/skills
-for d in skills/nature-*; do
+for d in skills/twc-*; do
   cp -R "$d" ~/.codex/skills/
 done
 ```
@@ -368,18 +368,18 @@ done
 npm install -g @anthropic-ai/claude-code
 mkdir -p ~/ai-skills
 cd ~/ai-skills
-git clone https://github.com/Yuan1z0825/nature-skills.git
+git clone https://github.com/Yuan1z0825/twc-skills.git
 mkdir -p ~/.claude/agents
-cat > ~/.claude/agents/nature-polishing.md <<'EOF'
+cat > ~/.claude/agents/twc-polishing.md <<'EOF'
 ---
-name: nature-polishing
-description: Use proactively for Nature-style academic polishing, restructuring, or Chinese-to-English manuscript refinement.
+name: twc-polishing
+description: Use proactively for IEEE-style academic polishing, restructuring, or Chinese-to-English manuscript refinement.
 ---
 
-When invoked, first read `~/ai-skills/nature-skills/skills/nature-polishing/SKILL.md`.
+When invoked, first read `~/ai-skills/twc-skills/skills/twc-polishing/SKILL.md`.
 Treat that file as the governing workflow.
 If the skill references supporting files, read only the specific files you need from
-`~/ai-skills/nature-skills/skills/nature-polishing/`.
+`~/ai-skills/twc-skills/skills/twc-polishing/`.
 EOF
 ```
 

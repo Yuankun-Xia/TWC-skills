@@ -1,13 +1,13 @@
 {
-  "name": "nature-skills",
-  "description": "A growing collection of Claude skills for producing academic work at Nature-journal standard. Covers scientific figures (nature-figure), manuscript prose polishing (nature-polishing), citation retrieval and export (nature-citation), data availability statements and FAIR metadata (nature-data), and paper-to-PPTX presentation conversion (nature-paper2ppt). Future releases planned: statistical reporting, peer-review responses, methods writing, cover letters, and review articles. All rules derived from primary sources — published Nature papers, journal author guidelines, and structured writing curricula.",
+  "name": "twc-skills",
+  "description": "A growing collection of Claude skills for producing academic work at IEEE Transactions / communications journal standard. Covers scientific figures (twc-figure), manuscript prose polishing (twc-polishing), citation retrieval and export (twc-citation), data availability statements and FAIR metadata (twc-data), and paper-to-PPTX presentation conversion (twc-paper2ppt). Adapted from nature-skills (Yuan1z0825) and tailored for IEEE Transactions on Wireless Communications and related venues. All rules derived from primary sources — published IEEE papers, journal author guidelines, and structured writing curricula.",
   "version": "1.0.0",
   "author": {
-    "name": "Yuan1z0825",
+    "name": "Yuankun-Xia",
     "email": ""
   },
   "license": "MIT",
-  "homepage": "https://github.com/Yuan1z0825/nature-skills",
-  "repository": "https://github.com/Yuan1z0825/nature-skills",
-  "keywords": ["nature", "academic", "science", "figure", "writing", "citation", "publication"]
+  "homepage": "https://github.com/Yuankun-Xia/twc-skills",
+  "repository": "https://github.com/Yuankun-Xia/twc-skills",
+  "keywords": ["ieee", "twc", "communications", "wireless", "academic", "figure", "writing", "citation", "publication"]
 }

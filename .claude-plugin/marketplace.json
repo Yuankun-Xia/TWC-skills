@@ -1,20 +1,20 @@
 {
-  "name": "nature-skills",
+  "name": "twc-skills",
   "version": "1.0.0",
-  "description": "Academic skills for Claude Code meeting Nature journal standards — scientific figures, manuscript polishing, citation management, data availability, and paper-to-presentation conversion",
+  "description": "Academic skills for Claude Code tailored for IEEE Transactions on Wireless Communications and related venues — scientific figures, manuscript polishing, citation management, data availability, and paper-to-presentation conversion. Forked and adapted from nature-skills by Yuan1z0825.",
   "owner": {
-    "name": "Yuan1z0825"
+    "name": "Yuankun-Xia"
   },
   "plugins": [
     {
-      "name": "nature-skills",
+      "name": "twc-skills",
       "version": "1.0.0",
       "source": "./",
-      "description": "A growing collection of Claude skills for producing academic work at Nature-journal standard. Covers scientific figures, manuscript polishing, citation retrieval, data availability, and paper-to-presentation workflows.",
+      "description": "A growing collection of Claude skills for producing academic work at IEEE Transactions / communications journal standard. Covers scientific figures, manuscript polishing, citation retrieval, data availability, and paper-to-presentation workflows. Adapted for TWC and related IEEE venues.",
       "author": {
-        "name": "Yuan1z0825"
+        "name": "Yuankun-Xia"
       },
-      "keywords": ["nature", "academic", "science", "figure", "writing", "citation", "publication"],
+      "keywords": ["ieee", "twc", "communications", "wireless", "academic", "figure", "writing", "citation", "publication"],
       "category": "academic"
     }
   ]
