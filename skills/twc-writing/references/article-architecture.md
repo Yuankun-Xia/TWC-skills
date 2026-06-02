@@ -1,16 +1,19 @@
 # Article Architecture
 
 Use this reference when writing or rebuilding manuscript sections. The patterns
-come from curated IEEE and top communications journals examples across materials,
-energy, construction decarbonization and machine learning. They are structural
-patterns, not wording templates.
+come from curated IEEE Transactions on Wireless Communications and related
+communications-journal papers. They are structural patterns, not wording
+templates. For wireless FL, AirComp, RIS/IRS, cell-free MIMO, semantic
+communications, or resource-allocation papers, also load
+`references/twc-2026-corpus-observations.md`.
 
 ## Full-paper argument
 
 A strong paper can usually be reduced to:
 
-`field-scale need -> unresolved bottleneck -> proposed move -> decisive evidence
--> broader implication -> boundary`
+`wireless-system need -> coupled communication/learning bottleneck -> proposed
+protocol, optimisation, or architecture -> theoretical or algorithmic support ->
+simulation evidence -> implication with operating boundary`
 
 Before drafting, force the user's material into this chain. If one link is
 missing, mark it as missing rather than writing around it.
@@ -19,12 +22,15 @@ missing, mark it as missing rather than writing around it.
 
 Recommended paragraph movement:
 
-1. Field-scale context or problem.
-2. Why current routes do not fully solve it.
-3. What this paper introduces or demonstrates.
-4. The strongest result, preferably with quantitative or comparative support.
-5. The mechanism, workflow or practical consequence.
-6. Bounded implication.
+1. Wireless context or system bottleneck.
+2. Why existing communication, learning, or optimisation routes do not fully
+   resolve the bottleneck.
+3. What this paper introduces: protocol, architecture, optimisation problem,
+   algorithm, analysis, or resource-control mechanism.
+4. The key analytical result, convergence property, complexity result, or
+   algorithmic guarantee when available.
+5. Simulation evidence with quantitative or comparative support.
+6. Bounded implication tied to the operating regime.
 
 Useful diagnostics:
 
@@ -36,10 +42,12 @@ Useful diagnostics:
 
 Use a controlled funnel:
 
-1. Establish the field stake.
-2. Explain the bottleneck in existing practice.
-3. Treat prior work fairly and specifically.
-4. Identify the remaining capability gap.
+1. Establish the communication-system setting and why it matters.
+2. Explain the coupled bottleneck, such as accuracy-energy, latency-staleness,
+   CSI overhead-beamforming quality, privacy-aggregation distortion, or
+   convergence-resource consumption.
+3. Treat prior work fairly by technical family, not paper-by-paper chronology.
+4. Identify the remaining capability gap and its technical reason.
 5. State the present study as a direct response to that gap.
 
 Avoid:
@@ -52,16 +60,18 @@ Avoid:
 
 Arrange Results as an evidence ladder:
 
-1. system, workflow or design space overview
-2. validation that the platform or assay is credible
-3. primary performance or discovery result
-4. fair comparison with baseline, standard practice or prior method
-5. mechanism, diagnostic analysis or interpretability
-6. scale-up, application, generalization or stress test
+1. simulation setup, system parameters, datasets, channel model, and baselines
+2. convergence or feasibility evidence
+3. primary performance result
+4. energy, latency, communication overhead, privacy, or resource tradeoff
+5. ablation, sensitivity, or robustness analysis
+6. operating-boundary discussion, such as SNR, bandwidth, device count, CSI
+   error, mobility, or data heterogeneity
 
 Subsection opening rule:
 
-`To test [question], we [action].`
+`To evaluate [claim] under [wireless condition], we compare [method] with
+[baselines] using [metric].`
 
 Then report the result and evidence. Keep interpretation short unless the
 paragraph explicitly transitions toward Discussion.
@@ -71,10 +81,13 @@ paragraph explicitly transitions toward Discussion.
 Discussion should widen from finding to meaning:
 
 1. central advance
-2. why the evidence supports it
-3. how it changes a workflow, design rule or conceptual boundary
-4. how it relates to previous studies
-5. what limits or dependencies remain
+2. why the theory and simulation evidence support it
+3. how it changes a communication-learning design rule or resource-control
+   workflow
+4. how it relates to previous wireless FL, AirComp, RIS/IRS, MIMO, or edge
+   intelligence studies
+5. what limits or dependencies remain, such as CSI assumptions, synchronization,
+   scalability, mobility, privacy budget, or non-IID severity
 6. what future work is now plausible
 
 Do not restate every figure. Select the evidence that changes interpretation.
@@ -98,10 +111,10 @@ Good titles are concrete and searchable:
 
 Examples of title logic:
 
-- material plus function
-- method plus task
-- process plus scale
-- model plus data regime
+- protocol plus wireless-learning setting
+- optimisation target plus system architecture
+- resource-control mechanism plus operating constraint
+- communication primitive plus AI/edge-intelligence task
 
 Avoid vague prestige words such as `novel`, `advanced`, `powerful`, `green`,
 `efficient` unless they are made concrete by the rest of the title.

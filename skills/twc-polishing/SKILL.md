@@ -1,8 +1,6 @@
 ---
 name: twc-polishing
 description: Polish, restructure, or translate academic prose into IEEE-style technical English using writing-strategy principles, curated IEEE Transactions / communications journal article patterns, and phrase-level support from Academic Phrasebank. Use whenever the user asks to polish a manuscript paragraph, abstract, introduction, results, discussion, conclusion, title, methods section, or Chinese academic draft for publication-quality English. Adapted from nature-polishing; tailored for IEEE TWC and related venues.
-version: 5.0.2
-author: Adapted from nature-polishing by Yuan1z0825; tailored for IEEE TWC
 ---
 
 # IEEE-Style Academic Polishing
@@ -33,6 +31,7 @@ These files are reference support. Use them after the section's rhetorical job i
 | File | Open when |
 |---|---|
 | [references/published-article-patterns.md](references/published-article-patterns.md) | You need IEEE Transactions / communications journal article-level writing patterns for abstracts, introductions, Results, Discussion, conclusions, or titles |
+| [../twc-writing/references/twc-2026-corpus-observations.md](../twc-writing/references/twc-2026-corpus-observations.md) | You need TWC-specific wireless FL, AirComp, RIS/IRS, cell-free MIMO, resource-allocation, experiment, or figure/table patterns distilled from local TWC papers |
 | [references/writing-strategy.md](references/writing-strategy.md) | You need paragraph- or section-level argument repair before sentence polishing |
 | [references/section-moves.md](references/section-moves.md) | You need section-specific move orders or phrase patterns derived from Academic Phrasebank |
 | [references/phrasebank-playbook.md](references/phrasebank-playbook.md) | You need hedging, transition, evidence, limitation, or future-work phrase families |
@@ -46,8 +45,8 @@ Before editing, determine what kind of paper or section this is.
 
 - `Research paper`: the reader asks why the phenomenon matters, what was done, what was found, and what it means.
 - `Methods paper`: the reader asks whether the method works, whether it is reproducible, and whether it is better under a fair comparison.
-- `Hypothesis-based work`: the argument tries to establish or rule out a causal explanation.
-- `Algorithmic or device work`: the argument proposes a procedure, tool, or system and must show that it performs reliably and advantageously.
+- `Wireless communications system paper`: the reader asks what channel, topology, resource, CSI, latency, energy, privacy, or heterogeneity constraint is being solved.
+- `Algorithmic or optimisation work`: the argument proposes a protocol, objective, decomposition, scheduling rule, beamforming design, or resource-control mechanism and must show that it performs reliably under fair wireless simulations.
 
 Do not use one narrative logic for all paper types.
 
@@ -78,14 +77,14 @@ If a paragraph or section violates this architecture, rebuild it before polishin
 
 ### 4. Use the correct writing order
 
-For a research article, a productive writing order is:
+For a TWC communications paper, a productive writing order is:
 
-1. Results
-2. Introduction and Conclusion
-3. Title
-4. Discussion
-5. Materials and Methods
-6. Authors
+1. System model and problem formulation
+2. Proposed algorithm, protocol, or analysis
+3. Simulation results and figures
+4. Introduction and contribution list
+5. Conclusion
+6. Title
 7. Abstract
 
 For a methods paper, a productive writing order often begins with:
@@ -115,8 +114,9 @@ AI may help polish, structure, or compare phrasings. AI should not invent or aut
 
 Before rewriting, identify the main problem:
 
-- wrong paper type logic
+- wrong wireless-system logic or paper type
 - missing gap or poor positioning
+- missing system model, channel/CSI assumption, objective, constraint, or variable definition
 - claim without evidence
 - evidence without a clear claim
 - missing boundary or limitation
@@ -195,28 +195,28 @@ A strong title should:
 
 Use `curiosity with credibility`, not empty cleverness. A hook is only acceptable if the claim remains fully defensible.
 
-### Materials and Methods
+### System Model, Problem Formulation, and Method
 
-Methods should be specific, complete, transparent, and reproducible.
+TWC methods should be specific, complete, transparent, and reproducible.
 
 Another group should be able to determine:
 
-- whether the work conforms to ethical norms
-- what materials and conditions were used
-- which key parameters, controls, and replicates were used
-- how data were processed and analysed
-- which statistical tests and software versions were used
+- which network entities are present, such as server, edge node, UAV, RIS/IRS, AP, BS, clients, devices, or vehicles
+- what channel model, CSI assumption, fading model, topology, and timeline are used
+- what variables, objective, constraints, and resource budgets are optimised
+- how the algorithm, decomposition, relaxation, MDP, Lyapunov step, or learning controller runs
+- what simulation parameters, baselines, datasets, and metrics reproduce the evidence
 
 It is acceptable to abbreviate by citing an earlier report only when that report truly contains the necessary detail.
 
 Never leave vague phrases such as:
 
-- `under standard conditions`
-- `using routine methods`
-- `data were analyzed statistically`
-- `differences were significant`
-- `samples were randomly assigned`
+- `under standard wireless settings`
+- `using typical simulation parameters`
+- `the channel was modelled generally`
 - `the method was validated`
+- `the proposed scheme is efficient`
+- `the baselines are representative`
 
 Replace them with the actual reproducible information.
 
@@ -229,13 +229,16 @@ In a methods paper, the Results section must show the advantages of the method o
 - Does it require fewer resources?
 - Is the comparison fair and reproducible?
 
-The Methods section in a methods paper may need additional detail such as:
+The Method section in a TWC methods paper may need additional detail such as:
 
 - axioms, conditions, and assumptions
 - hardware and software environment
 - mathematical derivations
 - evaluation protocol
 - datasets, baselines, metrics, splits, and hyperparameters
+- wireless parameters, including bandwidth, power budget, SNR, path loss, fading,
+  noise power, number of clients/APs/antennas/RIS elements, rounds, local epochs,
+  and non-IID partition rules
 
 ### Abstract
 

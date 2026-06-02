@@ -24,8 +24,8 @@ Common checks:
 
 Typical repair:
 
-- bad: `The hypoxia induces ...`
-- better: `Hypoxia induces ...`
+- bad: `The channel fading degrades ...`
+- better: `Channel fading degrades ...`
 
 ## Numbers and units
 
@@ -61,6 +61,8 @@ Flag and soften:
 - `best`
 - `superior`
 - `first`
+- `optimal` when only a relaxed, local, heuristic, or simulated solution is shown
+- `real-time` when latency or complexity evidence is not reported
 
 Safer replacements:
 
@@ -68,7 +70,8 @@ Safer replacements:
 - `suggest`
 - `to our knowledge`
 - `among the strongest`
-- `in this cohort`
+- `under the considered channel model`
+- `in the simulated network setting`
 
 ## Integrity rules
 
@@ -76,6 +79,8 @@ Safer replacements:
 - do not alter quantitative values unless correcting an obvious typo requested by the user
 - do not upgrade association to causation
 - do not imply broader generalisability than the study supports
+- do not imply robustness to channel, mobility, topology, data heterogeneity, or
+  CSI errors unless those conditions were evaluated
 
 ## AI boundary
 

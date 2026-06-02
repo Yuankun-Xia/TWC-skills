@@ -1,8 +1,6 @@
 ---
 name: twc-writing
 description: Draft, restructure, or plan IEEE-style manuscript sections from author-provided claims, results, figures, notes, or Chinese drafts. Use when the user wants to write or rebuild an abstract, introduction, results narrative, discussion, conclusion, title, or full manuscript argument for IEEE Transactions on Wireless Communications and related venues rather than only polish finished prose.
-version: 0.2.0
-author: Adapted from nature-writing by Yuan1z0825; tailored for IEEE TWC based on IEEE journal writing patterns
 ---
 
 # IEEE-Style Scientific Writing
@@ -25,6 +23,7 @@ not merely polishing existing sentences.
 | File | Open when |
 |---|---|
 | [references/article-architecture.md](references/article-architecture.md) | You need section-level structure, argument order, or published-article writing patterns |
+| [references/twc-2026-corpus-observations.md](references/twc-2026-corpus-observations.md) | You need TWC-specific wireless FL, AirComp, RIS/IRS, cell-free MIMO, resource-allocation, experiment, figure, or section-pattern guidance distilled from local TWC papers |
 | [references/abstract.md](references/abstract.md) | Drafting or revising an abstract, especially challenge-contribution and challenge-insight-contribution forms |
 | [references/introduction.md](references/introduction.md) | Drafting or revising an Introduction, task framing, technical challenge, contribution framing, or teaser/pipeline logic |
 | [references/related-work.md](references/related-work.md) | Rebuilding Related Work as topic synthesis instead of a paper-by-paper list |
@@ -42,8 +41,12 @@ Before drafting, identify:
 
 - manuscript section: title, abstract, introduction, results, discussion,
   conclusion, significance paragraph or full outline
-- paper type: mechanism, method, resource, device, model, clinical, materials,
-  computational or interdisciplinary
+- paper type: wireless federated learning, over-the-air computation, resource
+  allocation, RIS/IRS-assisted system, cell-free/MIMO, semantic/foundation-model
+  communications, channel estimation, positioning, or another communications
+  system/algorithm paper
+- wireless system constraints: channel model, CSI, topology, bandwidth, power,
+  device heterogeneity, data heterogeneity, latency, privacy, and energy budget
 - core claim: what the paper actually demonstrates
 - evidence: figures, measurements, comparisons, datasets, statistics or examples
 - boundary: where the claim stops
@@ -57,23 +60,28 @@ drafting. You may still produce a scaffold with explicit placeholders.
 1. Build a one-sentence argument: `In [system/problem], we show [advance] using
    [approach], supported by [evidence], with [boundary].`
 2. Choose the section architecture from `references/article-architecture.md`.
-3. Map each paragraph to one job: context, gap, approach, result, comparison,
+3. For TWC/wireless communications work, also check
+   `references/twc-2026-corpus-observations.md` before deciding the section
+   order, experiment evidence, or figure narrative.
+4. Map each paragraph to one job: context, gap, approach, result, comparison,
    mechanism, implication or limitation.
-4. Draft from evidence outward. Keep claims near the data that support them.
-5. Calibrate verbs: `show`, `demonstrate`, `suggest`, `indicate`, `enable`,
+5. Draft from evidence outward. Keep claims near the data that support them.
+6. Calibrate verbs: `show`, `demonstrate`, `suggest`, `indicate`, `enable`,
    `may`, `could`.
-6. Remove unsupported novelty and universal claims.
-7. Run a paragraph-flow check: one paragraph, one message, with a clear first
+7. Remove unsupported novelty and universal claims.
+8. Run a paragraph-flow check: one paragraph, one message, with a clear first
    sentence and explicit sentence-to-sentence relation.
-8. Return prose plus concise notes on assumptions and missing inputs.
+9. Return prose plus concise notes on assumptions and missing inputs.
 
 ## Section defaults
 
 ### Abstract
 
-Default Nature pattern:
-
 `context/problem -> gap -> approach -> key result -> implication -> boundary`
+
+For TWC, prefer:
+
+`wireless bottleneck -> missing capability -> proposed protocol/optimization/framework -> analysis or guarantee -> simulation evidence -> bounded implication`
 
 For technical AI, ML, CV or method-heavy manuscripts, open
 `references/abstract.md` and choose one of:
@@ -106,9 +114,10 @@ mechanism/diagnostic analysis -> application or generalization`
 
 Each subsection should have a claim-first opening and then data support.
 
-For ML/conference-style experiment sections, open `references/experiments.md`
-and make sure each major claim is backed by comparison, ablation, or stress-test
-evidence.
+For TWC experiment sections, make sure each major claim is backed by fair
+baselines, convergence or performance curves, resource/energy/latency evidence,
+and sensitivity studies over wireless conditions such as SNR, bandwidth, channel
+error, device count, data heterogeneity, or client participation.
 
 ### Related Work
 

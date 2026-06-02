@@ -2,9 +2,10 @@
 
 Use this file when polishing should improve scientific argument, not just English.
 The patterns below are distilled from curated IEEE and top communications journals
-research articles across materials, energy systems, construction decarbonization
-and machine learning. Do not copy their wording. Use the patterns to diagnose
-and reshape the user's manuscript.
+research articles, especially IEEE Transactions on Wireless Communications style
+papers on wireless federated learning, AirComp, RIS/IRS, cell-free MIMO, edge
+intelligence, semantic communications, and resource allocation. Do not copy their
+wording. Use the patterns to diagnose and reshape the user's manuscript.
 
 ## Abstract pattern
 
@@ -12,23 +13,29 @@ Strong abstracts usually move in six steps:
 
 1. name the field-scale problem or opportunity
 2. show why existing approaches are incomplete
-3. state the specific intervention or method
-4. give the decisive result with scale, comparison or constraint
-5. explain why the result changes what is possible
-6. close with scope, application or boundary
+3. state the specific protocol, optimisation problem, algorithm, architecture, or
+   analytical result
+4. give the decisive result with wireless operating conditions, comparison, or
+   constraint
+5. explain why the result changes a communication-learning design tradeoff
+6. close with scope, application, or boundary
 
 Polishing rule: if an abstract starts with the method, add the problem and gap
 first. If it ends with enthusiasm, replace it with a bounded implication.
 
 ## Introduction pattern
 
-High-performing introductions often use `scale -> bottleneck -> prior attempts ->
-missing capability -> present study`.
+High-performing TWC introductions often use `system setting -> coupled bottleneck
+-> prior technical families -> missing capability -> present study`.
 
-- `Scale`: quantify why the problem matters, preferably with field-level stakes.
-- `Bottleneck`: name the physical, computational, clinical or practical barrier.
+- `System setting`: identify the wireless network, edge-learning, AirComp, RIS/IRS,
+  MIMO, UAV, satellite, vehicular, or semantic-communication scenario.
+- `Bottleneck`: name the coupled barrier, such as accuracy-energy, latency-staleness,
+  CSI overhead-beamforming quality, privacy-aggregation error, or convergence-
+  resource consumption.
 - `Prior attempts`: acknowledge existing strategies fairly.
-- `Missing capability`: explain what those strategies still cannot do.
+- `Missing capability`: explain what those strategies still cannot do under the
+  relevant channel, resource, topology, heterogeneity, or privacy condition.
 - `Present study`: state what the paper does, not what it hopes to do.
 
 Polishing rule: keep the gap narrow enough that the study can actually fill it.
@@ -39,11 +46,11 @@ Avoid novelty claims that depend on weakening prior work.
 Results sections usually work best as an evidence ladder:
 
 1. overview of the system, workflow or design space
-2. validation that the platform works under controlled conditions
-3. primary performance result
-4. comparison with baselines or current practice
-5. mechanism, interpretation or diagnostic analysis
-6. scale-up, generalization or real-world application
+2. simulation setup and fair baseline/protocol definition
+3. convergence, accuracy, rate, distortion, or feasibility result
+4. energy, latency, communication overhead, privacy, or resource tradeoff
+5. ablation, sensitivity, robustness, or parameter study
+6. operating-boundary or scalability analysis
 
 Each Results paragraph should begin with the question or test, then report the
 observation, then give the quantitative or comparative support. Interpretation
@@ -55,7 +62,8 @@ Effective Discussion writing starts from the central advance and then widens:
 
 - what the study demonstrates
 - why the evidence is credible
-- how it changes an existing workflow, design rule or conceptual boundary
+- how it changes an existing wireless design rule, resource-control workflow, or
+  communication-learning tradeoff
 - what constraints remain
 - what future work is enabled, without promising untested outcomes
 
@@ -104,8 +112,10 @@ split it or subordinate one job.
 
 Flag and soften claims when:
 
-- a laboratory or simulation result is written as an immediate field-wide solution
-- a single material, model or system is described as universally applicable
+- a simulation result under one channel or topology is written as an immediate
+  field-wide solution
+- a single protocol, model, dataset, or resource setting is described as
+  universally applicable
 - correlation is rewritten as mechanism
 - a comparison lacks a fair baseline
 - a future application is stated as an achieved outcome

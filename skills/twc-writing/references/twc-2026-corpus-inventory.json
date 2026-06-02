@@ -1,0 +1,1319 @@
+[
+  {
+    "file": "Adaptive Power Control and Data Sampling for Energy-Efficient Over-the-Air Federated Edge Learning.pdf",
+    "title_guess": "Adaptive Power Control and Data Sampling for Energy-Efficient Over-the-Air Federated Edge Learning",
+    "page_count": 16,
+    "word_count_first_pages": 4357,
+    "abstract_words": 448,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "METHOD",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "PROPOSED METHOD",
+      "CONCLUSION",
+      "SIMULATION RESULTS",
+      "PERFORMANCE ANALYSIS"
+    ],
+    "figure_mentions": 28,
+    "table_mentions": 4,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 5
+  },
+  {
+    "file": "AirComp-Assisted Asynchronous Federated Learning for UAV Swarms A Self-Adaptive Aggregation Scheme to Tackle Model Staleness.pdf",
+    "title_guess": "AirComp-Assisted Asynchronous Federated Learning for UAV Swarms A Self-Adaptive Aggregation Scheme to Tackle Model Staleness",
+    "page_count": 15,
+    "word_count_first_pages": 4254,
+    "abstract_words": 225,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "SIMULATION RESULTS",
+      "PROPOSED ALGORITHM",
+      "METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 39,
+    "table_mentions": 4,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Biased Federated Learning Under Wireless Heterogeneity.pdf",
+    "title_guess": "Biased Federated Learning Under Wireless Heterogeneity",
+    "page_count": 14,
+    "word_count_first_pages": 4750,
+    "abstract_words": 246,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "NUMERICAL RESULTS",
+      "METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 6,
+    "table_mentions": 0,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy"
+    ],
+    "claim_move_count": 2
+  },
+  {
+    "file": "Communication-and-Computation Efficient Split Federated Learning in Wireless Networks Gradient Aggregation and Resource Management.pdf",
+    "title_guess": "Communication-and-Computation Efficient Split Federated Learning in Wireless Networks Gradient Aggregation and Resource Management",
+    "page_count": 15,
+    "word_count_first_pages": 3859,
+    "abstract_words": 488,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "METHOD",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 19,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Decentralized Federated Learning With Energy Harvesting Devices.pdf",
+    "title_guess": "Decentralized Federated Learning With Energy Harvesting Devices",
+    "page_count": 16,
+    "word_count_first_pages": 4420,
+    "abstract_words": 246,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 10,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 6
+  },
+  {
+    "file": "Efficient Asynchronous Federated Edge Learning Oriented Tasks Scheduling and Resources Allocation in Dynamic Multitasks MEC Networks.pdf",
+    "title_guess": "Efficient Asynchronous Federated Edge Learning Oriented Tasks Scheduling and Resources Allocation in Dynamic Multitasks MEC Networks",
+    "page_count": 15,
+    "word_count_first_pages": 4772,
+    "abstract_words": 492,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "METHOD",
+      "SIMULATION RESULTS",
+      "CONCLUSION",
+      "PROPOSED ALGORITHM"
+    ],
+    "figure_mentions": 32,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 0
+  },
+  {
+    "file": "Energy-Efficient Beamforming Design With Partial CSI Feedback for RIS-Assisted Systems.pdf",
+    "title_guess": "Energy-Efficient Beamforming Design With Partial CSI Feedback for RIS-Assisted Systems",
+    "page_count": 15,
+    "word_count_first_pages": 4841,
+    "abstract_words": 190,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "NUMERICAL RESULTS",
+      "METHOD",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 14,
+    "table_mentions": 5,
+    "domain_tags": [
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 2
+  },
+  {
+    "file": "Energy-Efficient Edge Scheduling and Resource Allocation for NOMA-Based Hierarchical Federated Learning.pdf",
+    "title_guess": "Energy-Efficient Edge Scheduling and Resource Allocation for NOMA-Based Hierarchical Federated Learning",
+    "page_count": 17,
+    "word_count_first_pages": 4231,
+    "abstract_words": 224,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "CONVERGENCE ANALYSIS",
+      "SYSTEM MODEL",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 17,
+    "table_mentions": 10,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 0
+  },
+  {
+    "file": "Energy-Efficient Federated Edge Learning for Small-Scale Datasets in Large IoT Networks.pdf",
+    "title_guess": "Energy-Efficient Federated Edge Learning for Small-Scale Datasets in Large IoT Networks",
+    "page_count": 17,
+    "word_count_first_pages": 4429,
+    "abstract_words": 180,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SIMULATION RESULTS",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "CONCLUSION",
+      "METHOD"
+    ],
+    "figure_mentions": 32,
+    "table_mentions": 5,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 7
+  },
+  {
+    "file": "Fast and Robust Channel Estimation for HMIMO A Graph-Based Wavenumber-Domain Approach.pdf",
+    "title_guess": "Fast and Robust Channel Estimation for HMIMO A Graph-Based Wavenumber-Domain Approach",
+    "page_count": 17,
+    "word_count_first_pages": 4500,
+    "abstract_words": 134,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 48,
+    "table_mentions": 6,
+    "domain_tags": [
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Federated Learning Over Device-Centric Cell-Free Networks A Long-Term Perspective.pdf",
+    "title_guess": "Federated Learning Over Device-Centric Cell-Free Networks A Long-Term Perspective",
+    "page_count": 16,
+    "word_count_first_pages": 4334,
+    "abstract_words": 564,
+    "section_headings": [
+      "ABSTRACT",
+      "CONVERGENCE ANALYSIS",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 32,
+    "table_mentions": 4,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 6
+  },
+  {
+    "file": "Federated Learning Over Wireless Networks Optimizing Performance With NOMA and Power Allocation.pdf",
+    "title_guess": "Federated Learning Over Wireless Networks Optimizing Performance With NOMA and Power Allocation",
+    "page_count": 13,
+    "word_count_first_pages": 4602,
+    "abstract_words": 181,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "CONVERGENCE ANALYSIS",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "METHOD",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 16,
+    "table_mentions": 1,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "energy/privacy"
+    ],
+    "claim_move_count": 2
+  },
+  {
+    "file": "Federated Learning With Controlled Descent Under Fading Convergence and Energy Implications.pdf",
+    "title_guess": "Federated Learning With Controlled Descent Under Fading Convergence and Energy Implications",
+    "page_count": 16,
+    "word_count_first_pages": 4535,
+    "abstract_words": 223,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "CONCLUSIONS",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "NUMERICAL RESULTS",
+      "CONCLUSION",
+      "PERFORMANCE ANALYSIS"
+    ],
+    "figure_mentions": 18,
+    "table_mentions": 4,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "energy/privacy"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Federated Learning With Energy Harvesting Devices An MDP Framework.pdf",
+    "title_guess": "Federated Learning With Energy Harvesting Devices An MDP Framework",
+    "page_count": 18,
+    "word_count_first_pages": 4759,
+    "abstract_words": 261,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "PROBLEM FORMULATION",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 21,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 8
+  },
+  {
+    "file": "Federated Prompt-Based Decision Transformer for Resource Allocation of Customized VR Streaming in Mobile Edge Computing.pdf",
+    "title_guess": "Federated Prompt-Based Decision Transformer for Resource Allocation of Customized VR Streaming in Mobile Edge Computing",
+    "page_count": 15,
+    "word_count_first_pages": 4971,
+    "abstract_words": 196,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "PROPOSED METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 32,
+    "table_mentions": 17,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "ris/irs",
+      "energy/privacy",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 2
+  },
+  {
+    "file": "Federated Reinforcement Learning for Uplink Centric Broadband Communication Optimization Over Unlicensed Spectrum.pdf",
+    "title_guess": "Federated Reinforcement Learning for Uplink Centric Broadband Communication Optimization Over Unlicensed Spectrum",
+    "page_count": 14,
+    "word_count_first_pages": 4421,
+    "abstract_words": 291,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 36,
+    "table_mentions": 4,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Federated Split Learning via Low-Rank Approximation A Communication-Efficient Approach.pdf",
+    "title_guess": "Federated Split Learning via Low-Rank Approximation A Communication-Efficient Approach",
+    "page_count": 17,
+    "word_count_first_pages": 4835,
+    "abstract_words": 199,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "PROPOSED ALGORITHM",
+      "SYSTEM MODEL",
+      "PERFORMANCE ANALYSIS",
+      "METHOD",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 21,
+    "table_mentions": 3,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "energy/privacy",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 6
+  },
+  {
+    "file": "Forwarding or Learning- A Flexible Low-Latency Low-Energy-Consumption Wireless Federated Learning Architecture With UE-to-Network Relay.pdf",
+    "title_guess": "Forwarding or Learning- A Flexible Low-Latency Low-Energy-Consumption Wireless Federated Learning Architecture With UE-to-Network Relay",
+    "page_count": 18,
+    "word_count_first_pages": 4687,
+    "abstract_words": 529,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "METHOD",
+      "SIMULATION RESULTS",
+      "CONCLUSION",
+      "PERFORMANCE ANALYSIS"
+    ],
+    "figure_mentions": 33,
+    "table_mentions": 6,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 6
+  },
+  {
+    "file": "Idle-Mode Positioning in mmWave Cellular Networks Through Beam-Level Path Loss Measurements Without LOS Detection.pdf",
+    "title_guess": "Idle-Mode Positioning in mmWave Cellular Networks Through Beam-Level Path Loss Measurements Without LOS Detection",
+    "page_count": 17,
+    "word_count_first_pages": 4852,
+    "abstract_words": 296,
+    "section_headings": [
+      "ABSTRACT",
+      "METHOD",
+      "INTRODUCTION",
+      "PROPOSED METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 30,
+    "table_mentions": 36,
+    "domain_tags": [
+      "resource allocation",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 1
+  },
+  {
+    "file": "Improving Wireless Federated Learning via Joint Downlink-Uplink Beamforming Over Analog Transmission.pdf",
+    "title_guess": "Improving Wireless Federated Learning via Joint Downlink-Uplink Beamforming Over Analog Transmission",
+    "page_count": 17,
+    "word_count_first_pages": 5152,
+    "abstract_words": 218,
+    "section_headings": [
+      "ABSTRACT",
+      "METHOD",
+      "INTRODUCTION",
+      "SIMULATION RESULTS",
+      "CONCLUSION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS"
+    ],
+    "figure_mentions": 18,
+    "table_mentions": 0,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Integrated Sensing- Communication- and Computation for Over-the-Air Federated Edge Learning.pdf",
+    "title_guess": "Integrated Sensing- Communication- and Computation for Over-the-Air Federated Edge Learning",
+    "page_count": 15,
+    "word_count_first_pages": 4619,
+    "abstract_words": 660,
+    "section_headings": [
+      "ABSTRACT",
+      "NUMERICAL RESULTS",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 15,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Integrated Sensing- Computation- and Communication Enabled Federated Edge Learning.pdf",
+    "title_guess": "Integrated Sensing- Computation- and Communication Enabled Federated Edge Learning",
+    "page_count": 15,
+    "word_count_first_pages": 4378,
+    "abstract_words": 196,
+    "section_headings": [
+      "ABSTRACT",
+      "PROPOSED ALGORITHM",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 21,
+    "table_mentions": 0,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 7
+  },
+  {
+    "file": "Joint Communication and Computation for Federated Learning Over Cell-Free MIMO Network.pdf",
+    "title_guess": "Joint Communication and Computation for Federated Learning Over Cell-Free MIMO Network",
+    "page_count": 15,
+    "word_count_first_pages": 4912,
+    "abstract_words": 275,
+    "section_headings": [
+      "ABSTRACT",
+      "SIMULATION RESULTS",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 30,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Joint Communication Scheduling and Resource Allocation for Distributed Edge Learning Seamless Integration in Next-Generation Wireless Networks.pdf",
+    "title_guess": "Joint Communication Scheduling and Resource Allocation for Distributed Edge Learning Seamless Integration in Next-Generation Wireless Networks",
+    "page_count": 19,
+    "word_count_first_pages": 5169,
+    "abstract_words": 584,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "METHOD",
+      "CONCLUSION",
+      "SIMULATION RESULTS"
+    ],
+    "figure_mentions": 19,
+    "table_mentions": 5,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Joint Task Scheduling and Resource Allocation for Multi-Task Federated Learning Over Wireless Network.pdf",
+    "title_guess": "Joint Task Scheduling and Resource Allocation for Multi-Task Federated Learning Over Wireless Network",
+    "page_count": 16,
+    "word_count_first_pages": 4356,
+    "abstract_words": 202,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "CONCLUSIONS",
+      "SYSTEM MODEL",
+      "METHOD",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 22,
+    "table_mentions": 1,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Joint Topology and Beamforming Optimization for Decentralized Federated Learning.pdf",
+    "title_guess": "Joint Topology and Beamforming Optimization for Decentralized Federated Learning",
+    "page_count": 17,
+    "word_count_first_pages": 4412,
+    "abstract_words": 167,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 39,
+    "table_mentions": 1,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 5
+  },
+  {
+    "file": "Joint_Client_Scheduling_and_Quantization_Optimization_in_Energy_Harvesting-Enabled_Federated_Learning_Networks.pdf",
+    "title_guess": "Joint Client Scheduling and Quantization Optimization in Energy Harvesting-Enabled Federated Learning Networks",
+    "page_count": 17,
+    "word_count_first_pages": 4530,
+    "abstract_words": 680,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "NUMERICAL RESULTS",
+      "METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 16,
+    "table_mentions": 15,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "energy/privacy"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "LoLaFL Low-Latency Federated Learning via Forward-Only Propagation.pdf",
+    "title_guess": "LoLaFL Low-Latency Federated Learning via Forward-Only Propagation",
+    "page_count": 16,
+    "word_count_first_pages": 4516,
+    "abstract_words": 256,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "METHOD",
+      "PERFORMANCE ANALYSIS",
+      "EXPERIMENTAL RESULTS"
+    ],
+    "figure_mentions": 27,
+    "table_mentions": 5,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "energy/privacy"
+    ],
+    "claim_move_count": 1
+  },
+  {
+    "file": "MAP-Optimal Hierarchical Quantization and Amplitude-Shift QAM for Reliable Digital Over-the-Air Computation.pdf",
+    "title_guess": "MAP-Optimal Hierarchical Quantization and Amplitude-Shift QAM for Reliable Digital Over-the-Air Computation",
+    "page_count": 16,
+    "word_count_first_pages": 4159,
+    "abstract_words": 200,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "NUMERICAL RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 27,
+    "table_mentions": 9,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo"
+    ],
+    "claim_move_count": 1
+  },
+  {
+    "file": "Movable Antenna-Enhanced RIS-Assisted Over-the-Air Computation.pdf",
+    "title_guess": "Movable Antenna-Enhanced RIS-Assisted Over-the-Air Computation",
+    "page_count": 16,
+    "word_count_first_pages": 4915,
+    "abstract_words": 535,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "PROPOSED ALGORITHM",
+      "SYSTEM MODEL",
+      "PROPOSED METHOD",
+      "METHOD",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 22,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Multi-IRS Enhanced Wireless Coverage Deployment Optimization Based on Large-Scale Channel Knowledge.pdf",
+    "title_guess": "Multi-IRS Enhanced Wireless Coverage Deployment Optimization Based on Large-Scale Channel Knowledge",
+    "page_count": 16,
+    "word_count_first_pages": 4807,
+    "abstract_words": 542,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "METHOD",
+      "NUMERICAL RESULTS",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 30,
+    "table_mentions": 4,
+    "domain_tags": [
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Optimization of Energy Efficiency for Federated Learning Over IRS-Assisted Cell-Free Massive MIMO Networks.pdf",
+    "title_guess": "Optimization of Energy Efficiency for Federated Learning Over IRS-Assisted Cell-Free Massive MIMO Networks",
+    "page_count": 20,
+    "word_count_first_pages": 4746,
+    "abstract_words": 276,
+    "section_headings": [
+      "ABSTRACT",
+      "SIMULATION RESULTS",
+      "INTRODUCTION",
+      "METHOD",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "NUMERICAL RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 52,
+    "table_mentions": 5,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 2
+  },
+  {
+    "file": "Over-the-Air Computation for Realizing Neural Link in In-Network AI Architectures.pdf",
+    "title_guess": "Over-the-Air Computation for Realizing Neural Link in In-Network AI Architectures",
+    "page_count": 16,
+    "word_count_first_pages": 4663,
+    "abstract_words": 599,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SIMULATION RESULTS",
+      "CONCLUSION",
+      "PROBLEM FORMULATION",
+      "METHOD",
+      "PROPOSED ALGORITHM"
+    ],
+    "figure_mentions": 31,
+    "table_mentions": 0,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 2
+  },
+  {
+    "file": "Physical Layer Security for STAR-RIS-Assisted Federated Learning Systems With Differential Privacy.pdf",
+    "title_guess": "Physical Layer Security for STAR-RIS-Assisted Federated Learning Systems With Differential Privacy",
+    "page_count": 16,
+    "word_count_first_pages": 4393,
+    "abstract_words": 613,
+    "section_headings": [
+      "ABSTRACT",
+      "METHOD",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "SIMULATION RESULTS",
+      "PROPOSED ALGORITHM",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 17,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Power-Efficient Over-the-Air Aggregation With Receive Beamforming for Federated Learning.pdf",
+    "title_guess": "Power-Efficient Over-the-Air Aggregation With Receive Beamforming for Federated Learning",
+    "page_count": 17,
+    "word_count_first_pages": 4860,
+    "abstract_words": 229,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "METHOD",
+      "CONCLUSIONS",
+      "SYSTEM MODEL",
+      "PROPOSED ALGORITHM",
+      "SIMULATION RESULTS",
+      "PROPOSED METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 20,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Prioritizing Gradient Sign Over Modulus An Importance-Aware Framework for Wireless Federated Learning.pdf",
+    "title_guess": "Prioritizing Gradient Sign Over Modulus An Importance-Aware Framework for Wireless Federated Learning",
+    "page_count": 17,
+    "word_count_first_pages": 4518,
+    "abstract_words": 558,
+    "section_headings": [
+      "ABSTRACT",
+      "SIMULATION RESULTS",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "METHOD",
+      "NUMERICAL RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 22,
+    "table_mentions": 0,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "PrivTuner With Homomorphic Encryption and LoRA A P3EFT Scheme for Privacy-Preserving Parameter-Efficient Fine-Tuning of AI Foundation Models.pdf",
+    "title_guess": "PrivTuner With Homomorphic Encryption and LoRA A P3EFT Scheme for Privacy-Preserving Parameter-Efficient Fine-Tuning of AI Foundation Models",
+    "page_count": 17,
+    "word_count_first_pages": 4174,
+    "abstract_words": 297,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "RELATED WORK",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "ALGORITHM DESIGN"
+    ],
+    "figure_mentions": 24,
+    "table_mentions": 19,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Rethinking Federated Learning Over the Air The Blessing of Scaling Up.pdf",
+    "title_guess": "Rethinking Federated Learning Over the Air The Blessing of Scaling Up",
+    "page_count": 15,
+    "word_count_first_pages": 4704,
+    "abstract_words": 572,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "EXPERIMENTAL RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 21,
+    "table_mentions": 0,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Rethinking Outage in Federated Learning An Adaptive Retransmission Design.pdf",
+    "title_guess": "Rethinking Outage in Federated Learning An Adaptive Retransmission Design",
+    "page_count": 16,
+    "word_count_first_pages": 4727,
+    "abstract_words": 223,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "EXPERIMENTAL RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 14,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "energy/privacy"
+    ],
+    "claim_move_count": 5
+  },
+  {
+    "file": "RIS-Assisted AirComp FL Joint Data Allocation and Power Optimization for Reduced Distortion.pdf",
+    "title_guess": "RIS-Assisted AirComp FL Joint Data Allocation and Power Optimization for Reduced Distortion",
+    "page_count": 18,
+    "word_count_first_pages": 4101,
+    "abstract_words": 234,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "EXPERIMENTAL RESULTS",
+      "SYSTEM MODEL",
+      "PROPOSED METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 26,
+    "table_mentions": 11,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 5
+  },
+  {
+    "file": "Robust Over-the-Air Federated Learning Under Imperfect CSI.pdf",
+    "title_guess": "Robust Over-the-Air Federated Learning Under Imperfect CSI",
+    "page_count": 16,
+    "word_count_first_pages": 4080,
+    "abstract_words": 186,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "CONVERGENCE ANALYSIS",
+      "PROPOSED METHOD",
+      "SYSTEM MODEL",
+      "METHODOLOGY",
+      "METHOD",
+      "NUMERICAL RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 32,
+    "table_mentions": 6,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 4
+  },
+  {
+    "file": "Satellite Federated Fine-Tuning for Foundation Models in Space Computing Power Networks.pdf",
+    "title_guess": "Satellite Federated Fine-Tuning for Foundation Models in Space Computing Power Networks",
+    "page_count": 17,
+    "word_count_first_pages": 4324,
+    "abstract_words": 582,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 32,
+    "table_mentions": 4,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Semantic Communication-Enhanced U-Shaped Split Federated Learning With Adaptive Compression for Vehicular Networks.pdf",
+    "title_guess": "Semantic Communication-Enhanced U-Shaped Split Federated Learning With Adaptive Compression for Vehicular Networks",
+    "page_count": 15,
+    "word_count_first_pages": 4300,
+    "abstract_words": 209,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "RELATED WORK",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "SIMULATION RESULTS",
+      "METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 40,
+    "table_mentions": 2,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "ris/irs",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Semi-Distributed Reinforcement Learning for Internet of Robotic Things-Based Sustainable Data Collection.pdf",
+    "title_guess": "Semi-Distributed Reinforcement Learning for Internet of Robotic Things-Based Sustainable Data Collection",
+    "page_count": 18,
+    "word_count_first_pages": 4631,
+    "abstract_words": 543,
+    "section_headings": [
+      "ABSTRACT",
+      "METHOD",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "NUMERICAL RESULTS",
+      "PROPOSED METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 30,
+    "table_mentions": 5,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "Task-Agnostic Semantic Communications Relying on Information Bottleneck and Federated Meta-Learning.pdf",
+    "title_guess": "Task-Agnostic Semantic Communications Relying on Information Bottleneck and Federated Meta-Learning",
+    "page_count": 17,
+    "word_count_first_pages": 4364,
+    "abstract_words": 555,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SIMULATION RESULTS",
+      "METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 21,
+    "table_mentions": 0,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 2
+  },
+  {
+    "file": "Toward Privacy-Preserving and Error-Tolerant Wireless Federated Learning Fixed-Point Model Aggregation With Differential Privacy Guarantees.pdf",
+    "title_guess": "Toward Privacy-Preserving and Error-Tolerant Wireless Federated Learning Fixed-Point Model Aggregation With Differential Privacy Guarantees",
+    "page_count": 17,
+    "word_count_first_pages": 4848,
+    "abstract_words": 205,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "EXPERIMENTAL RESULTS",
+      "CONCLUSIONS",
+      "RELATED WORK",
+      "METHOD",
+      "CONVERGENCE ANALYSIS",
+      "PROPOSED METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 33,
+    "table_mentions": 8,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 3
+  },
+  {
+    "file": "UAV-Enabled Over-the-Air Federated Learning A Hierarchical Aggregation Approach.pdf",
+    "title_guess": "UAV-Enabled Over-the-Air Federated Learning A Hierarchical Aggregation Approach",
+    "page_count": 17,
+    "word_count_first_pages": 4627,
+    "abstract_words": 519,
+    "section_headings": [
+      "ABSTRACT",
+      "PERFORMANCE ANALYSIS",
+      "SIMULATION RESULTS",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "NUMERICAL RESULTS",
+      "PROPOSED ALGORITHM",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 26,
+    "table_mentions": 8,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular"
+    ],
+    "claim_move_count": 5
+  },
+  {
+    "file": "VecComp Vector Computing via MIMO Digital Over-the-Air Computation.pdf",
+    "title_guess": "VecComp Vector Computing via MIMO Digital Over-the-Air Computation",
+    "page_count": 16,
+    "word_count_first_pages": 4487,
+    "abstract_words": 223,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 16,
+    "table_mentions": 0,
+    "domain_tags": [
+      "wireless federated learning",
+      "over-the-air computation",
+      "resource allocation",
+      "cell-free/mimo"
+    ],
+    "claim_move_count": 6
+  },
+  {
+    "file": "VEHFSL Hybrid Federated Split Learning for Resource-Constrained Vehicular Networks.pdf",
+    "title_guess": "VEHFSL Hybrid Federated Split Learning for Resource-Constrained Vehicular Networks",
+    "page_count": 15,
+    "word_count_first_pages": 4265,
+    "abstract_words": 261,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "PROBLEM FORMULATION",
+      "SIMULATION RESULTS",
+      "METHOD",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 22,
+    "table_mentions": 7,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 5
+  },
+  {
+    "file": "Zeroth-Order Federated Fine-Tuning for Large AI Models in Resource-Constrained Wireless Networks.pdf",
+    "title_guess": "Zeroth-Order Federated Fine-Tuning for Large AI Models in Resource-Constrained Wireless Networks",
+    "page_count": 15,
+    "word_count_first_pages": 3808,
+    "abstract_words": 559,
+    "section_headings": [
+      "ABSTRACT",
+      "INTRODUCTION",
+      "SYSTEM MODEL",
+      "CONVERGENCE ANALYSIS",
+      "PROPOSED ALGORITHM",
+      "SIMULATION RESULTS",
+      "CONCLUSION"
+    ],
+    "figure_mentions": 14,
+    "table_mentions": 3,
+    "domain_tags": [
+      "wireless federated learning",
+      "resource allocation",
+      "ris/irs",
+      "cell-free/mimo",
+      "energy/privacy",
+      "uav/satellite/vehicular",
+      "semantic/foundation models"
+    ],
+    "claim_move_count": 5
+  }
+]

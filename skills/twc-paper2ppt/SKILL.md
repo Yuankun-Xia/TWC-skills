@@ -1,21 +1,27 @@
 ---
 name: twc-paper2ppt
-description: Build a complete but efficient IEEE-style Chinese PPTX presentation from a scientific paper, preprint, PDF, article text, abstract, figure legends, or reading notes. Use this skill whenever the user asks to make slides/PPT/PPTX for journal club, group meeting, paper sharing, thesis seminar, lab meeting, department report, or academic presentation from a research paper, not only communications papers. It identifies the paper type and argument, selects only the figures needed for the story, writes Chinese slide content and speaker notes, creates the actual .pptx deck, and runs an explicit self-review/corrective revision loop focused on figure quality, text overflow prevention, and non-template visual design before delivery.
+description: Build a complete but efficient IEEE/TWC-style Chinese PPTX presentation from a wireless communications paper, TWC PDF, preprint, article text, abstract, figure legends, or reading notes. Use whenever the user asks to make slides/PPT/PPTX for journal club, group meeting, paper sharing, thesis seminar, lab meeting, department report, or academic presentation from papers on wireless federated learning, AirComp, RIS/IRS, cell-free MIMO, resource allocation, semantic communications, edge intelligence, or related IEEE communications topics. It identifies the paper's argument and system model, selects only the figures needed for the story, writes Chinese slide content and speaker notes, creates the actual .pptx deck, and runs a self-review/corrective revision loop focused on figure quality, text overflow prevention, and TWC-style evidence logic before delivery.
 ---
 
 # Purpose
-Transform a scientific paper or paper-derived notes into a complete Chinese, figure-integrated PPTX presentation package with a IEEE-style reporting logic.
+Transform a wireless communications paper or paper-derived notes into a complete
+Chinese, figure-integrated PPTX presentation package with IEEE/TWC-style
+reporting logic.
 
 The skill must not stop at an outline or script. The expected end product is a real `.pptx` deck. Keep supporting files minimal unless the user asks for more traceability.
 
-Use this skill for papers across scientific fields, including:
-- life sciences and medicine
-- chemistry and materials science
-- environmental and earth sciences
-- physics and engineering
-- computational biology, AI, and methods papers
-- interdisciplinary IEEE journal style research
-- reviews, perspectives, resources, datasets, and benchmark papers
+Use this skill first for TWC and adjacent IEEE communications papers, including:
+- wireless federated learning and federated edge learning,
+- over-the-air computation and analog/digital aggregation,
+- RIS/IRS, STAR-RIS, cell-free MIMO, beamforming, and channel estimation,
+- resource allocation, scheduling, power control, and energy efficiency,
+- UAV, satellite, vehicular, mobile edge computing, and IoT networks,
+- semantic communications, foundation-model fine-tuning, and edge intelligence,
+- privacy, security, quantization, and differential privacy in wireless systems,
+- surveys or perspective papers in wireless communications.
+
+The skill can still handle other IEEE-style engineering papers, but TWC
+presentation logic is the default whenever the source is a communications paper.
 
 # Core Principle
 Use the paper's scientific argument as the presentation spine.
@@ -77,7 +83,10 @@ The skill may receive:
 - an `input/source.md` file
 - a user-provided PPTX template
 
-Default output language is simplified Chinese unless the user requests otherwise. Preserve important technical terms, abbreviations, gene/protein names, model names, dataset names, equations, and statistical terms in English when needed.
+Default output language is simplified Chinese unless the user requests otherwise.
+Preserve important technical terms, abbreviations, model names, dataset names,
+equations, variables, metrics, channel models, and statistical terms in English
+when needed.
 
 # Default Fast Path
 For a normal selectable-text paper PDF, run the shortest complete path:
@@ -106,36 +115,52 @@ Extract, when available:
 - key figures, tables, and figure legends
 - validation, robustness, ablation, or sensitivity analyses
 - limitations and unresolved questions
-- broader scientific, clinical, technical, environmental, or translational meaning
+- broader technical meaning, deployment boundary, and future wireless-system
+  implications
 
 Do not invent missing numbers, mechanisms, datasets, or figure details.
 Use a two-pass reading strategy: first capture metadata, abstract, headings, figure legends, and table captions; then read only the result and methods pages needed to support the slides.
 
 ## Step 2. Classify the paper before designing slides
 Identify the primary paper type. Choose the closest fit:
-- discovery / mechanism paper
-- translational or applied science paper
-- clinical or population study
-- methods / algorithm / tool paper
-- resource / dataset / atlas paper
-- omics, single-cell, spatial, or multi-modal study
-- materials / chemistry / engineering performance study
-- environmental, ecological, or earth-system study
-- benchmark / evaluation paper
-- review / perspective / commentary
-- meta-analysis / systematic review
+- wireless federated learning / federated edge learning paper
+- over-the-air computation or aggregation paper
+- RIS/IRS / MIMO / beamforming / channel-estimation paper
+- resource allocation / scheduling / power-control paper
+- UAV / satellite / vehicular / MEC / IoT networking paper
+- semantic communications / foundation-model edge-intelligence paper
+- privacy, security, quantization, or differential-privacy communications paper
+- benchmark / evaluation / comparison paper
+- review / survey / perspective paper
 
 Then identify the best presentation logic:
-- `claim-first`: useful when the paper has one strong central claim
-- `question-to-evidence`: useful for mechanism and discovery papers
-- `problem-to-solution`: useful for methods, tools, and engineering papers
-- `workflow-to-validation`: useful for datasets, atlases, omics, and benchmarks
-- `evidence-map`: useful for reviews and perspectives
+- `problem-to-solution`: useful for most TWC algorithm and protocol papers
+- `system-to-optimization`: useful when system model and constraints drive the paper
+- `tradeoff-to-evidence`: useful when the claim is energy, latency, accuracy, privacy, or convergence improvement
+- `workflow-to-validation`: useful for edge-AI, semantic-communication, and foundation-model papers
+- `evidence-map`: useful for surveys and perspectives
 
 ## Step 3. Build the Chinese presentation plan
 Default length: 12-16 slides for a 15-20 minute report.
 
-The default structure is:
+For TWC and wireless communications papers, use this default structure:
+1. 标题页
+2. 研究背景：为什么这个无线系统问题重要
+3. 技术瓶颈：现有方法卡在哪里
+4. 论文核心问题与主张
+5. 系统模型与关键假设
+6. 问题建模：目标函数、变量与约束
+7. 方法框架 / 协议流程 / 算法设计
+8. 理论分析：收敛性、复杂度或性能界
+9. 仿真设置：场景、数据、信道、基线与指标
+10. 关键证据1：主性能或收敛结果
+11. 关键证据2：能耗、时延、通信开销或隐私权衡
+12. 关键证据3：参数敏感性、鲁棒性或消融实验
+13. 创新点与可复用价值
+14. 局限性与未来工作
+15. 总结与讨论
+
+Legacy generic structure, use only for non-communications papers:
 1. 标题页
 2. 研究背景：为什么这个问题重要
 3. 知识缺口 / 技术瓶颈
@@ -178,16 +203,16 @@ Do not create the whole deck from one generic layout family. If the plan shows r
 
 ## Step 4. Select figures as evidence, not decoration
 Inspect the source for:
-- graphical abstracts or summary models
-- study design and workflow diagrams
-- central result figures
-- microscopy or imaging panels
-- heatmaps, dimensionality reduction, networks, maps, or spatial plots
-- survival curves, forest plots, calibration curves, or statistical result plots
-- materials characterization and performance plots
+- system model, network architecture, or protocol timeline figures
+- workflow, algorithm, optimization, or block diagrams
+- convergence curves over communication rounds or global iterations
+- accuracy, loss, rate, distortion, outage, or MSE comparisons
+- energy, latency, power, communication overhead, or privacy tradeoff plots
+- sensitivity plots over SNR, bandwidth, device count, CSI error, channel
+  condition, RIS elements, antennas, or data heterogeneity
 - model architecture, benchmark, ablation, or error analysis figures
-- key tables
-- validation or control figures
+- key parameter, complexity, and performance tables
+- robustness, scalability, or boundary-condition figures
 
 Prioritize figures that carry the paper's argument:
 1. design/workflow,
@@ -457,55 +482,55 @@ Do not stop at "PPTX opens" if the self-review found high-severity issues. Corre
 
 # Paper-Type Guidance
 
-## Discovery / mechanism papers
-Use a question-to-evidence arc:
-1. phenomenon and importance,
-2. unknown mechanism,
-3. hypothesis or question,
-4. experimental design,
-5. evidence chain,
-6. model,
-7. limitations and next experiments.
+## Wireless Federated Learning / Edge Intelligence Papers
+Use a system-to-optimization arc:
+1. wireless edge-learning scenario and motivation,
+2. coupled bottleneck such as accuracy, energy, latency, privacy, or heterogeneity,
+3. system model and training/communication timeline,
+4. objective, variables, constraints, and assumptions,
+5. proposed scheduling, aggregation, compression, or optimization method,
+6. convergence/performance evidence and fair baselines,
+7. sensitivity, ablation, scalability, and operating boundaries.
 
-## Methods, AI, tool, or algorithm papers
-Use a problem-to-solution arc:
-1. current bottleneck,
-2. proposed method,
-3. workflow or architecture,
-4. evaluation design,
-5. performance compared with baselines,
-6. ablation, robustness, or failure cases,
-7. reuse scenarios and limitations.
+## Over-the-Air Computation / Aggregation Papers
+Use a channel-to-distortion arc:
+1. why aggregation over wireless channels matters,
+2. analog or digital AirComp bottleneck,
+3. channel model, CSI assumption, and aggregation signal model,
+4. beamforming, power control, quantization, or receiver design,
+5. distortion, convergence, or reliability analysis,
+6. simulation evidence under SNR, device count, channel error, and power budget,
+7. limitations such as synchronization, CSI overhead, and scalability.
 
-## Resource, dataset, atlas, omics, or benchmark papers
+## RIS/IRS, MIMO, Beamforming, And Channel-Estimation Papers
+Use a propagation-to-design arc:
+1. propagation or coverage challenge,
+2. network entities, antenna/RIS/channel assumptions,
+3. objective and constraints,
+4. beamforming, placement, channel-estimation, or optimization method,
+5. theoretical or complexity support,
+6. performance evidence over SNR, elements, antennas, users, and channel errors,
+7. deployment assumptions and boundary conditions.
+
+## Resource Allocation / Scheduling / Power-Control Papers
+Use a tradeoff-to-evidence arc:
+1. resource bottleneck and target metric,
+2. system model and decision timeline,
+3. optimization formulation,
+4. decomposition, relaxation, MDP, Lyapunov, DRL, or heuristic design,
+5. comparison with baselines,
+6. tradeoff plots for energy, latency, accuracy, throughput, or cost,
+7. sensitivity and complexity discussion.
+
+## Semantic Communications / Foundation-Model Edge Papers
 Use a workflow-to-validation arc:
-1. why the resource is needed,
-2. dataset/cohort/sample design,
-3. generation and quality control workflow,
-4. main landscape or map,
-5. validation and reproducibility,
-6. example biological or technical insights,
-7. access, reuse, and boundaries.
-
-## Clinical, population, or intervention studies
-Use a design-to-inference arc:
-1. clinical/public-health problem,
-2. study question,
-3. cohort/trial/design,
-4. endpoints and variables,
-5. primary result,
-6. subgroup/sensitivity/secondary analyses,
-7. bias, limitations, and practical implication.
-
-## Materials, chemistry, physics, engineering papers
-Use a property-to-mechanism or design-to-performance arc:
-1. target property or technical challenge,
-2. design principle,
-3. synthesis/fabrication/setup,
-4. characterization,
-5. performance evidence,
-6. mechanism or structure-property relationship,
-7. scalability, stability, or application boundary.
+1. why the AI/semantic workload stresses wireless networks,
+2. model, data, communication, and privacy constraints,
+3. proposed split, prompt, LoRA, compression, or fine-tuning workflow,
+4. resource-control or communication-efficient design,
+5. task performance and wireless efficiency evidence,
+6. ablation on model, compression, or resource choices,
+7. practical deployment and generalization boundaries.
 
 ## Reviews and perspectives
 Use an evidence-map arc:
@@ -584,7 +609,7 @@ Borrow IEEE-style figure-page composition principles, but keep this skill self-c
 # Citation and Attribution Rules
 Include source information:
 - title slide: paper title, authors if useful, journal/preprint server, year, DOI if available,
-- figure slides: small labels such as `Source: Fig. 2b, Nature, 2024`,
+- figure slides: small labels such as `Source: Fig. 2b, IEEE TWC, 2026`,
 - adapted or redrawn content: label as `整理自` or `改绘自`,
 - do not remove original figure labels or alter scientific data.
 
