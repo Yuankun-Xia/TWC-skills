@@ -29,28 +29,6 @@ skill 更贴近 TWC 的系统模型、问题建模、仿真实验和无线通信
 
 Hello everyone, I’m Yuan Yizhe, a PhD student at Shanghai Jiao Tong University. I’m currently working on research and entrepreneurial projects in medical AI. Thank you for your continued interest in twc-skill. If you have any requests, feel free to open an issue. If we find the request meaningful and feasible, we’ll do our best to implement it. We also welcome PRs, but please make sure to follow the submission format described later in the README so that we can review and merge them more efficiently.
 
-## 📢 课题组诚招“医学 + AI”实习生
-<table border="0" cellpadding="10" cellspacing="0">
-  <tr>
-    <td width="34%" valign="top" align="center" style="border: none; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
-      <span style="font-size: 14px; color: #666;">微信群聊</span><br>
-      <img src="https://github.com/user-attachments/assets/b5c8a2f1-9b80-4b2b-b606-961c79d513da" width="100%" style="max-width:160px; margin-top:15px; border: 1px solid #eee;">
-      <div style="margin-top:10px; font-size: 13px; color: #666;">答疑交流群！进群记得12小时内备注</div>
-    </td>
-    <td width="66%" valign="top" style="border: none; line-height: 1.6;">
-      还在寻找能够落地的 <strong>AI 前沿交叉赛道</strong>吗？我们课题组现向对“医学 + AI”充满热情的你发出邀请！<br><br>
-      这里有充足的计算资源，以及深耕医疗大模型（LLM）、视觉预训练、Prompt Engineering 及自动化医疗 AI Agent 的科研团队。我们更看重你的<strong>自驱力、学习能力与科研产出追求</strong>。<br><br>
-      项目信息文档链接：https://iigqjt2m4ia.feishu.cn/wiki/VIvDwHu18iTc6mk411xco8chnJb   密码：664#N926<br>
-      如果你有相关代码基础或项目经验，渴望在顶级交叉学科中积累成果，请将简历发送至：<br>
-      📧 <strong><a href="mailto:sjtu520aimedws@163.com" style="text-decoration: none; color: #0056b3;">sjtu520aimedws@163.com</a></strong><br>
-      <small>（标题格式：姓名-专业-医学AI科研申请）</small><br><br>
-      期待与你在 AI 赋能医疗的征途中，做出最扎实的科研工作！
-    </td>
-  </tr>
-</table>
-
----
-
 ## Installation
 
 `twc-skills` is a repository of reusable instruction bundles centred on `SKILL.md`.
@@ -661,33 +639,4 @@ The following are documented gaps. Contributions welcome.
 | `twc-methods` | Deep-dive Methods writing assistant — reproducibility checklist, forbidden phrases, ethical approval templates, supplementary organisation | Medium |
 | `twc-cover` | Cover letter drafting — hook paragraph, significance framing, fit-to-journal argument, ≤ 500-word limit | Medium |
 | `twc-review` | Writing a literature review or review article in *IEEE* style — synthesis vs. summary, argument-led structure | Low |
-
-
-
-## ☕ 如果内容对你有帮助，欢迎随缘支持一下
-
----
-
-<div align="center">
-
-| 微信赞赏 | 来自粉丝的小感动 |
-| --- | --- |
-| <img width="320" alt="微信赞赏" src="https://github.com/user-attachments/assets/83c101e7-2370-46e9-a840-cb506df98cf4" /> | <img width="320" alt="粉丝的鼓励" src="https://github.com/user-attachments/assets/0484300a-95e8-4cb3-ad73-478ba9bd19d6" /> |
-
-</div>
-
-### 💬 想说的话
- 
-项目会长期免费维护，大家正常使用就好。  
-很多朋友还是学生党，所以完全不需要有任何“必须打赏”的压力。
-
-如果这些内容刚好帮你节省了一些时间、解决了一点问题，  
-又恰好想请作者喝杯咖啡，那我会非常开心 ☕  
-
-你的支持会用于：
-
-- 持续更新内容
-- 服务器与工具费用
-- 熬夜写文档时的续命奶茶（认真）
-
 无论是否赞赏，都非常感谢你的关注与支持 ❤️
