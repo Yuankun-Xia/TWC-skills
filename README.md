@@ -25,9 +25,6 @@ wireless-communications presentation logic.
 本次升级基于 50 篇用户提供的 TWC 论文做结构化归纳。仓库不保存论文 PDF 或全文，
 只保留公开安全的结构观察，例如章节模式、图表模式、领域标签和统计信息，用于让
 skill 更贴近 TWC 的系统模型、问题建模、仿真实验和无线通信论文表达习惯。
-大家好，我是上海交通大学博士生袁一哲，目前主要从事医疗 AI 相关的研究与创业实践。欢迎大家持续关注 twc-skill。如果你有任何需求，欢迎提交 issue；如果我们认为该需求有意义且可行，也会尽量推进实现。我们同样欢迎 PR，但请务必按照 README 后面说明的格式提交，以便我们更高效地审核与合并。
-
-Hello everyone, I’m Yuan Yizhe, a PhD student at Shanghai Jiao Tong University. I’m currently working on research and entrepreneurial projects in medical AI. Thank you for your continued interest in twc-skill. If you have any requests, feel free to open an issue. If we find the request meaningful and feasible, we’ll do our best to implement it. We also welcome PRs, but please make sure to follow the submission format described later in the README so that we can review and merge them more efficiently.
 
 ## Installation
 
